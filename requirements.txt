@@ -1,0 +1,5 @@
+# CoppeliaSim ZeroMQ remote API client (pulls in pyzmq + cbor2)
+coppeliasim-zmqremoteapi-client>=2.0.0
+numpy>=1.21
+matplotlib>=3.5
+pytest>=7.0
