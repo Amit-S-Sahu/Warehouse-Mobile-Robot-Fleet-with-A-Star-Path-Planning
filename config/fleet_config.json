@@ -1,0 +1,51 @@
+{
+  "_comment": "Units: metres / radians, CoppeliaSim world frame. Robot names must match aliases in the scene (Robot_0 is cloned for missing ones). CLI flags --num-robots / --start / --goal override this file.",
+
+  "num_robots": 3,
+
+  "robots": [
+    { "name": "Robot_0", "start": [-4.0, -4.0, 0.0] },
+    { "name": "Robot_1", "start": [-3.0, -4.0, 0.0] },
+    { "name": "Robot_2", "start": [-2.0, -4.0, 0.0] }
+  ],
+
+  "auto_start_area": {
+    "_comment": "Used for robots without an explicit start (e.g. when num_robots > robots listed).",
+    "x": [-4.2, -0.6],
+    "y": [-4.3, -2.8],
+    "spacing": 0.9,
+    "yaw": 0.0
+  },
+
+  "stations": {
+    "P1": [-2.25, -0.5],
+    "P2": [2.25, -0.5],
+    "P3": [-2.25, 1.5],
+    "P4": [2.25, 1.5],
+    "P5": [-2.25, 3.8],
+    "P6": [2.25, 3.8],
+    "D1": [3.5, -3.5],
+    "D2": [1.5, -3.5]
+  },
+
+  "goals_mode": "tasks",
+
+  "tasks": [
+    { "id": "T1", "pick": "P1", "drop": "D1" },
+    { "id": "T2", "pick": "P4", "drop": "D2" },
+    { "id": "T3", "pick": "P5", "drop": "D1" },
+    { "id": "T4", "pick": "P2", "drop": "D2" },
+    { "id": "T5", "pick": "P6", "drop": "D1" },
+    { "id": "T6", "pick": "P3", "drop": "D2" }
+  ],
+
+  "goals": {
+    "_comment_": "Only used when goals_mode is 'goals' (or when --goal is passed). Values: station name or [x, y].",
+    "Robot_0": "P6",
+    "Robot_1": "P4",
+    "Robot_2": [0.0, 3.8]
+  },
+
+  "return_to_start": true,
+  "dwell_time": 2.0
+}

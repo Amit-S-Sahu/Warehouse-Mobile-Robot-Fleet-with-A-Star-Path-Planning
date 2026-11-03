@@ -1,0 +1,17 @@
+{
+  "_comment": "Reference warehouse layout (10 m x 10 m). Build the CoppeliaSim scene with exactly these cuboids (see docs/SCENE_SETUP.md, phase P3). Also used for offline planning/tests when CoppeliaSim is not running. size_x/size_y are full extents in metres, yaw in radians.",
+  "bounds": { "xmin": -5.0, "xmax": 5.0, "ymin": -5.0, "ymax": 5.0 },
+  "obstacles": [
+    { "name": "Wall_North", "x": 0.0,   "y": 4.95,  "size_x": 10.0, "size_y": 0.1,  "yaw": 0.0, "height": 0.5 },
+    { "name": "Wall_South", "x": 0.0,   "y": -4.95, "size_x": 10.0, "size_y": 0.1,  "yaw": 0.0, "height": 0.5 },
+    { "name": "Wall_East",  "x": 4.95,  "y": 0.0,   "size_x": 0.1,  "size_y": 10.0, "yaw": 0.0, "height": 0.5 },
+    { "name": "Wall_West",  "x": -4.95, "y": 0.0,   "size_x": 0.1,  "size_y": 10.0, "yaw": 0.0, "height": 0.5 },
+
+    { "name": "Shelf_1", "x": -2.25, "y": -1.5, "size_x": 3.0, "size_y": 0.6, "yaw": 0.0, "height": 1.0 },
+    { "name": "Shelf_2", "x": 2.25,  "y": -1.5, "size_x": 3.0, "size_y": 0.6, "yaw": 0.0, "height": 1.0 },
+    { "name": "Shelf_3", "x": -2.25, "y": 0.5,  "size_x": 3.0, "size_y": 0.6, "yaw": 0.0, "height": 1.0 },
+    { "name": "Shelf_4", "x": 2.25,  "y": 0.5,  "size_x": 3.0, "size_y": 0.6, "yaw": 0.0, "height": 1.0 },
+    { "name": "Shelf_5", "x": -2.25, "y": 2.5,  "size_x": 3.0, "size_y": 0.6, "yaw": 0.0, "height": 1.0 },
+    { "name": "Shelf_6", "x": 2.25,  "y": 2.5,  "size_x": 3.0, "size_y": 0.6, "yaw": 0.0, "height": 1.0 }
+  ]
+}
